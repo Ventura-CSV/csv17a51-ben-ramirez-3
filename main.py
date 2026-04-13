@@ -12,7 +12,8 @@ def get_domain(mapping: dict) -> set:
 def get_range(mapping: dict) -> set:
     """Return the range — the set of outputs actually mapped to."""
     # === TODO ===
-    return mapping.values()
+    # I put the values of the mapping into a set to get the unique outputs, which is the range.
+    return set(mapping.values())
     # === END TODO ===
 
 
